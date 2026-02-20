@@ -14,9 +14,19 @@ version = "1.0.0"
 author = "centipm"
 description = "A simple package that prints 'Hello, World!'"
 url = "https://raw.githubusercontent.com/tyydev1/hello/refs/heads/main/hello.sh"
+sha256 = "801514443e84711314ff450dc269133ca6e2654e395b3fde9b2669facd30cfd3"
 
 [asteroids]
 version = "1.0.0"
 author = "centipm"
 description = "A simple game of asteroids. To test if GUI packages can be run with CentiPM, as long as they are a binary executable."
 url = "https://github.com/tyydev1/pygame-asteroids/releases/download/v1.0.0/pyasteroids"
+sha256 = "1a6e3f4102130d5b9fed49974f7ba7282f8e0d107b4b23ba1557a0cb53c557e2"
+
+# TEST PACKAGES #
+[tampered_hello]
+version = "1.0.0"
+author = "centipm-test"
+description = "A tampered version of the hello package, with a different message and a different checksum. This is for testing the checksum verification feature of CentiPM."
+url = "https://raw.githubusercontent.com/tyydev1/hello/refs/heads/main/hello.sh" # just pretend this is tampered and has a different message, the URL is the same for simplicity
+sha256 = "00000000000000000000000000000000000000000000000000000000000000000000"
