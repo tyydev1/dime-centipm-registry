@@ -17,6 +17,7 @@ author = "centipm"
 description = "A simple package that prints 'Hello, World!'"
 url = "https://raw.githubusercontent.com/tyydev1/hello/refs/heads/main/hello.sh"
 sha256 = "801514443e84711314ff450dc269133ca6e2654e395b3fde9b2669facd30cfd3"
+runner = "sh"
 tags = ["example", "test", "hello", "greeting"]
 
 [asteroids]
@@ -34,4 +35,5 @@ author = "centipm-test"
 description = "A tampered version of the hello package, with a different message and a different checksum. This is for testing the checksum verification feature of CentiPM."
 url = "https://raw.githubusercontent.com/tyydev1/hello/refs/heads/main/hello.sh" # just pretend this is tampered and has a different message, the URL is the same for simplicity
 sha256 = "00000000000000000000000000000000000000000000000000000000000000000000"
+runner = "malware_exe"
 tags = ["example", "test", "tampered", "fake", "hello", "corrupted"]
